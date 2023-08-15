@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "D6aMGZcSBwBYXHTU6BizXHct8RQtcuavw2StQIH6eci9Y10eCQk8TsKsneQ5FMUMB0hlMS5hlYTU/auEZByNWg==",
+  "success": true,
+  "projectFilePath": "C:\\Internship\\SuggestiveContentDetector\\SuggestiveContentDetector.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Іван\\.nuget\\packages\\awssdk.core\\3.7.200.3\\awssdk.core.3.7.200.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\awssdk.rekognition\\3.7.200.3\\awssdk.rekognition.3.7.200.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Іван\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Rekognition Suggestive Content Detection</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form id="imageUploadForm" enctype="multipart/form-data">
+        <input type="file" name="imageFile" id="imageFile" accept="image/*">
+        <input type="button" value="Upload" onclick="uploadImage()">
+    </form>
+
+    <div id="result">
+        <!-- The result will be displayed here -->
+    </div>
+
+    <script>
+        function uploadImage() {
+            var formData = new FormData();
+            var fileInput = document.getElementById('imageFile');
+
+            if (fileInput.files.length === 0) {
+                alert('Please select an image to upload.');
+                return;
+            }
+
+            formData.append('imageFile', fileInput.files[0]);
+
+            fetch('https://localhost:5001/api/Content', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Assuming the response from the server contains the probability
+                // of suggestive content as a percentage (e.g., data.probability)
+                displayResult(data.probability);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function displayResult(probability) {
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<h2>Probability of Suggestive Content: ' + probability + '%</h2>';
+        }
+    </script>
+</body>
+</html>
